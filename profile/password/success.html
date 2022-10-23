@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UIT Bank</title>
+    <link rel="icon" href="../asset/img/logo-uit.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</head>
+<body>
+
+  <div id="header">
+    <div class="header-content">
+        <div class="home-direct">
+            <a href="">
+                <img src="../asset/img/banner_0.png" alt="" height="60">
+            </a>
+        </div>
+        <div class="direct-container">
+            <a class="direct-link" href="dashboard.php"><i class="fa fa-fw fa-calculator "></i>Dashboard</a>
+            <a class="direct-link" href="profile.php" class="active"><i
+                    class="fa fa-fw fa-id-card-o "></i>Profile</a>
+            <a class="direct-link" href="transfer.php"><i class="fa fa-fw fa-cogs "></i>Transfer</a>
+            <a class="direct-link" href="transactions.php"><i class="fa fa-fw fa-file-text "></i>Transactions</a>
+        </div>
+        <div class="direct-container">
+            <a class="direct-link " href="logout.php"><i class="fa fa-fw fa-sign-out "></i>Logout</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+<div class="form-body">
+  <div class="success-body">
+    <img src="../asset/img/logo-uit.png" alt="" height="100">
+    <h2>Password Updated!</h2>
+    <h3>Your password has been changed succesfully!</h3>
+    <h3>Use your new password to <a href="../login/login.php">login!</a></h3>
+  </div>
+</div>
+</body>
+</html>
